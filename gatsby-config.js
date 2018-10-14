@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vriyas Hartama',
+    title: `I'am Vriyas Hartama`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -18,5 +17,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-sass'
   ],
 }

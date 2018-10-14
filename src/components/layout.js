@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import '../styles/index.scss'
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -20,14 +22,12 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: `Vriyas Hartama's Stuff` },
-            { name: 'keywords', content: 'Vriyas, Hartama, Website, Personal, Portofolio' },
+            { name: 'keywords', content: 'Vriyas, Hartama, Vriyas, Website, Personal' },
           ]}
         >
           <html lang="en" />
         </Helmet>
-        <div>
           {children}
-        </div>
       </>
     )}
   />
